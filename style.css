@@ -1,0 +1,414 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+   background: linear-gradient(135deg, #4da6ff, #000000);
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Titre */
+header h1 {
+    font-size: 28px;
+}
+
+/* Navigation */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Effet au survol */
+nav a:hover {
+    color: #020a13;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    background-color: #4da6ff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* Effet soulignement animé */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4da6ff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #4da6ff;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(77, 166, 255, 0.7), rgba(0, 0, 0, 0.7)),
+                url('Images/aimg1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slideBg 15s infinite;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+/* Animation */
+@keyframes slideBg {
+    0% {
+        background-image: url('Images/aimg3.jpg');
+    }
+    33% {
+        background-image: url('Images/aimg6.jpg');
+    }
+    66% {
+        background-image: url('Images/aimg9.jpg');
+    }
+    100% {
+        background-image: url('Images/aimg7.jpg');
+    }
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ================= BOUTON ================= */
+
+.btn-abonnement {
+    padding: 14px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #4da6ff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-abonnement:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* =========================
+   SECTION INFO BIBLIOTHEQUE
+========================= */
+#info-bibliotheque {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#info-bibliotheque h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#info-bibliotheque p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+.intro-text {
+  font-weight: bold;
+  color: #4493ad;
+  font-size: 20px;
+}
+
+/* =========================
+   CONTAINER GENERAL
+========================= */
+.book-container {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* =========================
+   GRILLE DES LIVRES
+========================= */
+.book-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* =========================
+   CARTE LIVRE
+========================= */
+.book-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.book-details {
+  padding: 20px;
+}
+
+.book-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* =========================
+   BOUTON LIRE
+========================= */
+.read-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #87CEEB;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.read-button:hover {
+  background-color: #87CEEB;
+}
+
+/* =========================
+   AUTRES LIVRES
+========================= */
+.autres-livres {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.autres-livres h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.autres-livres ul {
+  list-style: none;
+  padding: 0;
+}
+
+.autres-livres li {
+  margin-bottom: 8px;
+}
+
+.autres-livres a {
+  text-decoration: none;
+  color: #0f0115;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.autres-livres a:hover {
+  color: #2c3e50;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  #info-bibliotheque h2 {
+    font-size: 26px;
+  }
+
+  .book-image {
+    height: 200px;
+  }
+}
